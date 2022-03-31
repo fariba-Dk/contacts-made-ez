@@ -1,0 +1,14 @@
+roladex=# SELECT * FROM contacts;
+ id | first_name | last_name |       email        |  cell_phone  |           address           |    dob     |  notes
+----+------------+-----------+--------------------+--------------+-----------------------------+------------+---------
+  1 | Joe        | Smith     | jsmith@gmail.com   | 310-999-7777 |                             |            |
+  2 | Fay        | Arnold    | jsmi77@gmail.com   | 310-999-7900 | 22 Palms LA CA 90088        | 1988-04-08 | married
+  3 | Josh       | Kim       | jsmi77@hotmail.com | 388-444-7900 | 800 Las Palmas DHS CA 92088 | 1998-12-08 | married
+(3 rows)
+
+faribadadko
+ Schema |      Name       |   Type   |    Owner
+--------+-----------------+----------+-------------
+ public | contacts        | table    | faribadadko
+ public | contacts_id_seq | sequence | faribadadko
+(2 rows)

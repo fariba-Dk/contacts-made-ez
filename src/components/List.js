@@ -3,7 +3,7 @@ import EditContact from "./EditContact";
 import ViewContact from './ViewContact';
 import '../index.css'
 import {Link} from 'react-router-dom'
-import Form from './Form'
+import Form from './AddContact'
 
 const List = () => {
 
@@ -112,7 +112,7 @@ const List = () => {
                   {/* 12   4 7 1 */}
                   <div className="row align-items-center d-flex justify-content-around">
                       <div className="col-md-4">
-                        <img src="https://randomuser.me/api/portraits/men/99.jpg" alt="" className="img-fluid contact-img"/>
+                        <img src="https://randomuser.me/api/portraits/men/99.jpg" alt="pic" className="img-fluid contact-img"/>
                         </div>
 
                       <div className="col-md-7">

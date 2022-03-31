@@ -2,7 +2,7 @@ import React, {Fragment, useState} from 'react';
 import '../index.css'
 
 
-const Form = () => {
+const AddContact = () => {
 
   const [contacts, setContacts ] = useState("")
 
@@ -48,6 +48,101 @@ const Form = () => {
 
   return (
     <Fragment>
+      <section className="add-contact p-3">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <p className="h4 text-success fw-bold">Create Contact</p>
+              <p className="fst-italic">Lorem20 </p>
+            </div>
+          </div>
+
+
+          <div className="row">
+            <div className="col-md-4">
+              <form>
+                <div className="mb-2">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    className="form-control"
+                  />
+                </div>
+
+                <div className="mb-2">
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    className="form-control"
+                  />
+                </div>
+
+                <div className="mb-2">
+                  <input
+                    type="text"
+                    placeholder="Cell phone"
+                    className="form-control"
+                  />
+                </div>
+
+                <div className="mb-2">
+                  <input
+                    type="text"
+                    placeholder="Email"
+                    className="form-control"
+                  />
+                </div>
+
+                <div className="mb-2">
+                  <input
+                    type="text"
+                    placeholder="Address"
+                    className="form-control"
+                  />
+                </div>
+
+                <div className="mb-2">
+                  <input
+                    type="text"
+                    placeholder="Dob"
+                    className="form-control"
+                  />
+                </div>
+
+                <div className="mb-2">
+                  <input
+                    type="text"
+                    placeholder="Notes"
+                    className="form-control"
+                  />
+                </div>
+
+                <div>
+                  <input type="submit" className="btn btn-success" value="Create"/>
+                  <button className="btn btn-dark ms-2">Create</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Fragment>
+
+
+
+
+  )
+}
+
+
+export default AddContact;
+
+
+
+{/*
+        </div>
+      </section>
       <h1 className="text-center mt-5">My Roladex ☏ with PERN</h1>
         <form className="d-flex mt-5" onSubmit={onSubmitForm}>
 
@@ -124,11 +219,4 @@ const Form = () => {
 
           <button className="btn btn-success" type="submit">Add</button>
 
-        </form>
-
-    </Fragment>
-  )
-}
-
-
-export default Form;
+        </form> */}

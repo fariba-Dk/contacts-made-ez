@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import Navbar from './components/Navbar'
 import List from './components/List';
-import Form from './components/Form';
+import Form from './components/AddContact';
 import ViewContact from './components/ViewContact'
 import EditContact from './components/EditContact'
 import "./index.css"

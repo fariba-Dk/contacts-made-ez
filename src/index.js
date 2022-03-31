@@ -1,20 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import App from '../src/App';
+import * as ReactDOMClient from 'react-dom/client';
 import './index.css';
-import App from './App';
 
 
-// add for Fontawesome icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+const container = document.getElementById('root');
+const root = ReactDOMClient.createRoot(container);
+// Create *and* render a root with hydration.
 
-// add bootstrap
-//import '../node_modules/bootstrap/dist/css';
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
-import 'bootstrap/dist/css/bootstrap.min.css';
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
+root.render(<App tab="home" />);

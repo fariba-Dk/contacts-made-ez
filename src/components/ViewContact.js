@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
-import { Link } from 'react-router-dom';
 
-const ViewContact= () =>{
+
+const ViewContact= () => {
 
   return(
 
@@ -63,8 +63,8 @@ const ViewContact= () =>{
             <div className="row">
               <div className="col">
 
-              <Link to={'/contacts/'} className="btn btn-warning">Back
-              </Link>
+              {/* <div to={'/contacts/'} className="btn btn-warning">Back
+              </div> */}
 
               </div>
             </div>

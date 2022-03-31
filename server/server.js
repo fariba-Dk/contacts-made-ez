@@ -92,16 +92,19 @@ app.put('/contacts/:id', async(req, res)=>{
     try{
         const {id} = req.params;
 
-        const { updated } = req.body;
+        const updated = req.body;
+
         // UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition
 
-        const updateContact = await db.query("UPDATE contacts SET (first_name=$1,last_name=$2,cell_phone=$3, email=$4,address=$5,dob=$6,notes=$7) WHERE id = $1 RETURNING *", [updated.first_name, updated.last_name, updated.cell_phone, updated.email, updated.address,updated.dob,updated.notes]);
+        const updateContact = await db.query("UPDATE contacts SET first_name=$1,last_name=$2,cell_phone=$3, email=$4,address=$5,dob=$6,notes=$7 WHERE id = $8 RETURNING *", [updated.first_name, updated.last_name, updated.cell_phone, updated.email, updated.address,updated.dob,updated.notes,id]);
 
-        console.log(updateContact.rows[0])
+        console.log('this is updated contact--->', updateContact);
         res.status(200).json(updateContact.rows[0])
 
     }catch(error){
+        console.error(error)
         res.send(error)
+
      }
 })
 

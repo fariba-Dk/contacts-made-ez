@@ -12,11 +12,11 @@ const Navbar= () =>{
     <React.Fragment>
     <nav className="navbar navbar-dark bg-dark navbar-expand-sm">
       <div className="container">
-        <Link to={'/'} className="navbar-brand">
+        <p to={'/'} className="navbar-brand">
          <i className="fa fa-mobile text-warning"/>
         My Contact
         <span className="text-warning"> ☏ Roladex</span>
-        </Link>
+        </p>
       </div>
 
 

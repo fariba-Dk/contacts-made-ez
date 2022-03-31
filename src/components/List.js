@@ -2,7 +2,7 @@ import { useState, useEffect, Fragment } from "react";
 import EditContact from "./EditContact";
 import ViewContact from './ViewContact';
 import '../index.css'
-import {Link} from 'react-router-dom'
+//import {Link} from 'react-router-dom'
 import Form from './AddContact'
 
 const List = () => {
@@ -62,11 +62,13 @@ const List = () => {
               <div className="col">
                 <p className="h3 fw-bold">Contact Manager
                   <h1 className="mt-5 text-center"> My Contacts 📇 </h1>
-                    <Link to={<Form/>}
+                    <div>
+
+                    <Form/>
                       className="btn btn-primary ms-2">
                       <i className="fa fa-plus-circle me-2"/>
                       Add New Contact
-                      </Link>
+                      </div>
                 </p>
                 <p className="fst-italic">lorem30  </p>
               </div>
@@ -152,13 +154,17 @@ const List = () => {
 
                     <div className="col-md-1 d-flex flex-column align-items-center">
 
-                      <Link className="btn btn-warning my-1" to={<ViewContact/>}>
-                      <i className="fa fa-eye"/>
-                      </Link>
+                      <div className="btn btn-warning my-1"></div>
 
-                      <Link className="btn btn-primary my-1" to={<ViewContact/>}>
+                      <ViewContact/>
+                      <i className="fa fa-eye"/>
+                      </div>
+
+                      <div className="btn btn-primary my-1">
+                      <ViewContact/>
+                      </div>
                       <i className="fa fa-pen"/>
-                      </Link>
+                      </div>
 
                       <button className="btn btn-danger my-1"  >
                       <i className="fa fa-trash"/>
@@ -169,9 +175,6 @@ const List = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-        </div>
 
       </section>
 
@@ -182,58 +185,6 @@ const List = () => {
 
 
 
-
-{/*
-                  <table className="table mt-5 text-center"> */}
-                    {/* <thead className="head">
-                      <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Cell Phone</th>
-                        <th>Email</th>
-                        <th>Address</th>
-                        <th>Dob</th>
-                        <th>Notes</th>
-                      </tr>
-                    </thead>
-
-
-                    <tbody> */}
-
-                      {/* {contacts.map(contact => (
-{/* */}
-                          {/* <tr key={contact.id}>
-
-                          <td>{contact.first_name}</td>
-                          <td>{contact.last_name}</td>
-                          <td>{contact.cell_phone}</td>
-                          <td>{contact.email}</td>
-                          <td>{contact.address}</td>
-                          <td>{contact.dob}</td>
-                          <td>{contact.notes}</td>
-                          <td>
-                          <button className="btn btn-success">Edit</button>
-                          </td> */}
-
-                          {/* we need to pass the PROP for Edit contact bringing component as a child*/}
-                          {/* <td>
-                            <EditContact contact={contact}/>
-                          </td>
-                          <td>
-                          {/* we need to fetch request */}
-                          {/* <button
-                          className="btn btn-danger"
-                          onClick={()=> deleteContact(contact.id)}>Delete</button> */}
-
-
-                          {/* </td>
-                        </tr> */}
-
-                      {/* ))} */}
-
-                  {/* </tbody>
-
-                </table> */}
 
 
 export default List;

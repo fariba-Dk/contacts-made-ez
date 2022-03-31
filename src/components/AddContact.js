@@ -129,18 +129,13 @@ const AddContact = () => {
       </section>
     </Fragment>
 
-
-
-
   )
 }
-
-
 export default AddContact;
 
+//
 
-
-{/*
+/*
         </div>
       </section>
       <h1 className="text-center mt-5">My Roladex ☏ with PERN</h1>
@@ -219,4 +214,7 @@ export default AddContact;
 
           <button className="btn btn-success" type="submit">Add</button>
 
-        </form> */}
+        </form> */
+
+//
+

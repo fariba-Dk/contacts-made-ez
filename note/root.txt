@@ -1,0 +1,20 @@
+bootstrap: npm install bootstrap - css, js
+
+fontawesome icon: npm i @fortawesome/fontawesome-free
+
+
+connect cdn link => https://cdnjs.com/
+
+adjax
+raect router dom
+
+components
+navbar
+list
+view-contact
+form
+edit
+
+
+services:
+contact service t make connection

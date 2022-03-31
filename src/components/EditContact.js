@@ -7,7 +7,7 @@ const EditContact = ({contacts}) => {
 
         const updateContact = async (e) => {
         //i dont want to refresh yet
-          e.preventDefault()
+          e.preventDefault();
 
           try{
             const body = {contact}
@@ -29,20 +29,20 @@ const EditContact = ({contacts}) => {
 
   return(
     <Fragment>
-      <button type="button" class="btn btn-warning" data-toggle="modal" data-target={`#id${contact.id}`}>
+      <button type="button" className="btn btn-warning" data-toggle="modal" data-target={`#id${contact.id}`}>
         Edit
       </button>
 
 
         {/* id= id(num) */}
-      <div class="modal" id={`id${contact.id}`}>
-        <div class="modal-dialog">
-          <div class="modal-content">
+      <div className="modal" id={`id${contact.id}`}>
+        <div className="modal-dialog">
+          <div className="modal-content">
 
             {/* <!-- Modal Header --> */}
 
             {/* <!-- Modal body --> */}
-            <div class="modal-body">
+            <div className="modal-body">
               <input
                 type="text"
                 className="form-control"
@@ -52,8 +52,8 @@ const EditContact = ({contacts}) => {
             </div>
 
             {/* <!-- Modal footer --> */}
-            <div class="modal-footer">
-              <button type="button" class="btn btn-warning" data-dismiss="modal"
+            <div className="modal-footer">
+              <button type="button" className="btn btn-warning" data-dismiss="modal"
               onClick={(e)=> updateContact(e)}
               >
               Edit</button>

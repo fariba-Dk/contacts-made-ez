@@ -19,7 +19,7 @@ const Form = () => {
    //NOW we need to submit the formhandle the e of the user typing into the form
   const onSubmitForm = async (e) => {
 
-    e.preventDefault() //prevent default to occur
+    e.preventDefault(); //prevent default to occur
 
     try{
 

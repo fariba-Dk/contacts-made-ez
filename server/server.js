@@ -61,7 +61,7 @@ app.post('/contacts', cors(), async (req, res) => {
             //
 
             'INSERT INTO contacts(first_name, last_name, cell_phone, email, address, dob, notes) VALUES ($1, $2, $3, $4, $5,$6,$7) RETURNING *',
-            [newContact.first_name, newContact.last_name, newContact.cell_phone, newContact.email, newContact.address,newContact.dob,newContact.notes]);
+            [newContact.first_name, newContact.last_name, newContact.cell_phone, newContact.email, newContact.address, newContact.dob,newContact.notes] );
 
             console.log(addContact.rows[0]);
             res.status(200).json(addContact.rows[0]);

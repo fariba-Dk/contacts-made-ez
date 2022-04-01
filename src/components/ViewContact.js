@@ -13,7 +13,7 @@ const ViewContact= () => {
             <div className="col">
 
               <p className="h3 text-warning fw-bold">View Contact</p>
-              <p className="fst-italic">Lorem20 </p>
+           
 
             </div>
           </div>

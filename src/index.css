@@ -1,17 +1,13 @@
-html{
-
-  background-color: rgb(221, 221, 45);
-
+body{
+  background-color: #ccda46!important;
 
 }
-.head{
-  background-color: rgb(210, 198, 221);
-
-}
-
-
 .contact-img{
-  width: 200px;
-  height:200px;
+  width: 150px;
+  height:150px;
   border-radius: 50%
 }
+.container-nav{
+  font-size: 100px;
+}
+

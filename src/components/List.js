@@ -56,127 +56,117 @@ const List = () => {
     <Fragment>
 
       <section className="contact-search">
-        <div className="container">
-          <div className="grid">
-            <div className="row">
-              <div className="col">
-                <p className="h3 fw-bold">Contact Manager
-                  <h1 className="mt-5 text-center"> My Contacts 📇 </h1>
-                    <div>
+        <div className="container p-3">
+        <div className="grid">
+         <div className="row col-md-9">
+          <form className="row">
+            <div className="col">
 
-                    <Form/>
-                      className="btn btn-primary ms-2">
-                      <i className="fa fa-plus-circle me-2"/>
-                      Add New Contact
-                      </div>
-                </p>
-                <p className="fst-italic">lorem30  </p>
-              </div>
+            <div className="mb-2">
+            <input
+              className="form-control"
+              type="text"
+              placeholder="Search contacts"
+            />
             </div>
-              <div className="row">
-                <div className="col-md-6">
-                  <form className="row">
-                    <div className="col">
-                      <div className="mb-2">
-                        <input
-                          className="form-control"
-                          type="text"
-                          placeholder="Search contacts"
-                        />
-                      </div>
+            </div>
 
-                    </div>
-                    <div className="col">
+            <div className="col">
 
-                      <div className="mb2">
-                        <input
-                          type="submit"
-                          className="btn btn-outline-dark"
-                          value="Search"/>
-                      </div>
-                    </div>
+            <div className="mb-2">
 
-                  </form>
+            <input
+              className="btn btn-outline-dark"
+              type="submit"
+              value="Search"
 
-                </div>
-
-              </div>
+            />
+            </div>
+            </div>
+             <div/>
+          </form>
           </div>
         </div>
+        </div>
+
       </section>
+      {/* C O N T A C T  --- L I S T */}
 
       <section className="contact-list">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="card">
-                  <div className="card-body">
-                  {/* 12   4 7 1 */}
-                  <div className="row align-items-center d-flex justify-content-around">
-                      <div className="col-md-4">
-                        <img src="https://randomuser.me/api/portraits/men/99.jpg" alt="pic" className="img-fluid contact-img"/>
-                        </div>
+        <div className="container">
+         <div className="row">
+         <div className="col-md-6">
+         <div className="card">
 
-                      <div className="col-md-7">
+         <div className="card-body">
+         <div className="row align-items-center d-flex justify-content-around">
+              <div className="col-md-4">
+              <img src="https://randomuser.me/api/portraits/men/99.jpg" alt="pic" className="img-fluid contact-img"/>
+              </div>
 
-                        <ul className="list-group">
+
+              <div className="col-md-7">
+                <ul className="list-group">
                           <li className="list-group-item list-group-item-action">
-                          First Name : <span className="fw-bold"> Andy</span>
+                          First Name : <span> Andy</span>
                           </li>
 
                           <li className="list-group-item list-group-item-action">
-                           Last Name: <span className="fw-bold"> Andy</span>
+                           Last Name: <span> Andy</span>
                           </li>
 
                           <li className="list-group-item list-group-item-action">
-                          Cell Phone : <span className="fw-bold"> Andy</span>
+                          Cell Phone : <span> Andy</span>
                           </li>
 
                           <li className="list-group-item list-group-item-action">
-                          Email : <span className="fw-bold"> Andy</span>
+                          Email : <span>Andy</span>
                           </li>
 
                           <li className="list-group-item list-group-item-action">
-                           Address : <span className="fw-bold"> Andy</span>
+                           Address : <span> Andy</span>
                           </li>
 
                           <li className="list-group-item list-group-item-action">
-                          DOB : <span className="fw-bold"> Andy</span>
+                          DOB : <span> Andy</span>
                           </li>
 
                           <li className="list-group-item list-group-item-action">
-                          Notes : <span className="fw-bold"> Andy</span>
+                          Notes : <span> Andy</span>
                           </li>
 
                         </ul>
-                      </div>
-
-
-                    <div className="col-md-1 d-flex flex-column align-items-center">
-
-                      <div className="btn btn-warning my-1"></div>
-
-                      <ViewContact/>
-                      <i className="fa fa-eye"/>
-                      </div>
-
-                      <div className="btn btn-primary my-1">
-                      <ViewContact/>
-                      </div>
-                      <i className="fa fa-pen"/>
-                      </div>
-
-                      <button className="btn btn-danger my-1"  >
-                      <i className="fa fa-trash"/>
-                      </button>
-
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
+              {/* ul ends */}
+              <div className="col-md-1 d-flex flex-column align-items-center">
+              <button className="btn btn-warning my-1">
+              <i className="fa fa-eye"/>
+
+              </button>
+              <button className="btn btn-primary my-1"
+              > <i className="fa fa-pen"/>
+
+              </button>
+              <button className="btn btn-danger my-1"> <i className="fa fa-trash"/>
+
+              </button>
+
+              </div>
+
+              </div>
+</div>
+
+</div>
+</div>
+
+              </div>
+              </div>
+
+
+
 
       </section>
+      <Form/>
 
     </Fragment>
   )

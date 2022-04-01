@@ -53,7 +53,7 @@ const AddContact = () => {
           <div className="row">
             <div className="col">
               <p className="h4 text-success fw-bold">Create Contact</p>
-              <p className="fst-italic">Lorem20 </p>
+
             </div>
           </div>
 
@@ -118,8 +118,7 @@ const AddContact = () => {
                 </div>
 
                 <div>
-                  <input type="submit" className="btn btn-success" value="Create"/>
-                  <button className="btn btn-dark ms-2">Create</button>
+                  <button className="btn btn-success" >Create</button>
                 </div>
 
               </form>

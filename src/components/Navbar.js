@@ -1,27 +1,31 @@
 import React, {Fragment} from 'react'
-import {Link} from 'react-router-dom'
 
 
 
-
-
-const Navbar= () =>{
+const Navbar= () => {
 
   return(
 
     <React.Fragment>
-    <nav className="navbar navbar-dark bg-dark navbar-expand-sm">
-      <div className="container">
+     <nav id="nav" className="text-align-center navbar navbar-dark bg-dark navbar-expand-sm ">
+
+      <div className="container-nav">
+
+
         <p to={'/'} className="navbar-brand">
-         <i className="fa fa-mobile text-warning"/>
+
+         <i className="fa fa-mobile text-warning fw-bold"/>
         My Contact
-        <span className="text-warning"> ☏ Roladex</span>
+        <span className="text-warning fw-bold"> ☏ Roladex</span>
+
         </p>
+
+
       </div>
 
 
-    </nav>
 
+    </nav>
     </React.Fragment>
   )
 

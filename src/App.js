@@ -1,12 +1,14 @@
 import React, {Fragment} from 'react';
-import Navbar from './components/Navbar'
-import List from './components/List';
+
 import AddContact from './components/AddContact';
+import EditContact from './components/EditContact';
+import List from './components/List';
+import Navbar from './components/Navbar'
 import ViewContact from './components/ViewContact'
-import EditContact from './components/EditContact'
+
 import "./index.css"
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 
 
@@ -17,21 +19,10 @@ function App(){
     <Fragment>
 
       <Navbar/>
-
-
       <List/>
+     
 
 
-        {/* <Routes> */}
-          {/* <Route path={'/'} element={<Navigate to={'/contacts'}/>} />
-          <Route path={'/contacts/add'} element={<Form/>} />
-
-          <Route path={'/contacts/view/:id'} element={<ViewContact/>} />
-          <Route path={'/contacts/edit/:id'} element={<EditContact/>} /> */}
-
-        {/* </Routes> */}
-
-        <ViewContact/>
 
     </Fragment>
   )
